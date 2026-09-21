@@ -1,0 +1,33 @@
+# ============================================
+# eSign AI - Files not uploaded to GitHub
+# ============================================
+
+# Blender source and backup files
+*.blend
+*.blend1
+*.blend2
+
+# Python/cache files
+__pycache__/
+*.pyc
+
+# Environment / secrets
+.env
+.env.*
+*.key
+
+# Windows files
+Thumbs.db
+Desktop.ini
+
+# VS Code local settings
+.vscode/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+# Old development files
+avatar3.glb
+content1.js
+content1_files/

@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "eSign AI",
+  "version": "0.1.0",
+  "description": "Displays a sign-language avatar over YouTube videos.",
+
+"content_scripts": 
+  [
+    {
+        "matches": ["https://www.youtube.com/*"],
+        "js": [
+            "dictionary.js",
+            "translator.js", 
+            "content.js"
+        ],
+        "css": [
+            "style.css"
+        ]
+    }
+  ],
+
+  "web_accessible_resources":
+  [
+    {
+      "resources": [
+        "avatar.html",
+        "avatar.js",
+        "avatar.glb",
+        "libs/three.min.js",
+        "libs/GLTFLoader.js"
+      ],
+      "matches": ["*://www.youtube.com/*"]
+    }
+  ]
+}

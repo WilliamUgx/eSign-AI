@@ -1,0 +1,88 @@
+/* ==========================================
+   eSign AI - Floating Avatar Window
+   ========================================== */
+
+#esign-avatar-box {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+
+    width: 240px;
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+
+    background: rgba(20, 20, 20, 0.96);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 14px;
+
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.55);
+
+    overflow: hidden;
+    z-index: 2147483647;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#esign-avatar-header {
+    height: 36px;
+    flex: 0 0 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 8px 0 12px;
+
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.9);
+
+    cursor: grab;
+    user-select: none;
+    touch-action: none;
+}
+
+#esign-avatar-header.esign-dragging {
+    cursor: grabbing;
+}
+
+#esign-avatar-title {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+#esign-avatar-close {
+    width: 27px;
+    height: 27px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+    border: 0;
+    border-radius: 6px;
+
+    background: transparent;
+    color: #ffffff;
+
+    font-size: 22px;
+    line-height: 1;
+
+    cursor: pointer;
+}
+
+#esign-avatar-close:hover,
+#esign-avatar-close:focus-visible {
+    background: rgba(255, 255, 255, 0.16);
+    outline: none;
+}
+
+#esign-avatar-frame {
+    width: 100%;
+    flex: 1;
+
+    border: 0;
+    background: transparent;
+}
