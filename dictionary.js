@@ -23,7 +23,7 @@ const SIGN_DICTIONARY = [
             "greetings"
         ],
 
-        animation: "Hello",
+        animation: "Hello",//
 
         priority: 100,
 
